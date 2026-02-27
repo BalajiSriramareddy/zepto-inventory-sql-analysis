@@ -1,9 +1,4 @@
-# zepto-inventory-sql-analysis
-A PostgreSQL SQL project that loads Zepto inventory data from a raw CSV into a clean analytics table, performs data cleaning/validation, and answers key business questions on discounts, stock availability, estimated revenue by category, and inventory weight.
-
-````md
 # Zepto Inventory SQL Analysis (PostgreSQL)
-
 A SQL portfolio project using PostgreSQL to load Zepto inventory data from a raw CSV into a clean analytics table, run data cleaning/validation checks, and generate business insights on discounts, stock availability, estimated revenue by category, and inventory weight.
 
 ## Dataset
@@ -23,7 +18,7 @@ A SQL portfolio project using PostgreSQL to load Zepto inventory data from a raw
 COPY zepto_raw(category,name,mrp_paise,discount_percent,available_quantity,discounted_selling_price_paise,weight_in_gms,out_of_stock,quantity)
 FROM 'C:\Users\YOURNAME\Downloads\zepto_v2.csv'
 WITH (FORMAT csv, HEADER true);
-
+```
 3) Run the insert step to populate `zepto` (clean table).
 4) Execute exploration, cleaning, and business insight queries.
 
@@ -65,7 +60,4 @@ WITH (FORMAT csv, HEADER true);
 ## Author
 
 Balaji
-````
 
-```
-```
